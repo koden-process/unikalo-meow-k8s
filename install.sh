@@ -12,7 +12,7 @@ sed -i '' "s/APP_NAME/$APP_NAME/g" app.yaml
 sed -i '' "s/PROJECT_NAME/$PROJECT_NAME/g" app.yaml
 sed -i '' "s/NAMESPACE/$NAMESPACE/g" app.yaml
 
-
+sed -i '' "s/URL/$URL/g" charts/values.yaml
 sed -i '' "s/APP_NAME/$APP_NAME/g" charts/values.yaml
 sed -i '' "s/PROJECT_NAME/$PROJECT_NAME/g" charts/values.yaml
 sed -i '' "s/NAMESPACE/$NAMESPACE/g" charts/values.yaml
