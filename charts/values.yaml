@@ -1,0 +1,8 @@
+app:
+  name: APP_NAME
+  image: killiankopp/meow:1.0
+  replicas: 1
+  port: 3000
+  url: URL
+  namespace: NAMESPACE
+  secret: SECRET_NAME
