@@ -7,6 +7,7 @@ read -p "Entrez le nom du secret Kubernetes (SECRET_NAME) : " SECRET_NAME
 read -p "Entrez le namespace Kubernetes (NAMESPACE) : " NAMESPACE
 read -p "Entrez l'URL' (URL) : " URL
 
+sed -i '' "s/REPO/$REPO/g" app.yaml
 sed -i '' "s/APP_NAME/$APP_NAME/g" app.yaml
 sed -i '' "s/PROJECT_NAME/$PROJECT_NAME/g" app.yaml
 sed -i '' "s/NAMESPACE/$NAMESPACE/g" app.yaml

@@ -6,7 +6,7 @@ metadata:
 spec:
   project: koden-clients
   source:
-    repoURL: "https://github.com/REPO.git"
+    repoURL: "https://github.com/koden-process/unikalo-meow-k8s.git"
     targetRevision: main
     path: charts
   destination:
