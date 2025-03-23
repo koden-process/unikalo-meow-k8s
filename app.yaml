@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: APP_NAME
+  name: unikalo-meow
   namespace: argocd
 spec:
-  project: PROJECT_NAME
+  project: koden-clients
   source:
     repoURL: "https://github.com/REPO.git"
     targetRevision: main
     path: charts
   destination:
     server: https://kubernetes.default.svc
-    namespace: NAMESPACE
+    namespace: koden-clients
   syncPolicy:
     automated:
       prune: true
