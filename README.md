@@ -18,14 +18,37 @@ app:
 Avant de déployer ce chart, vous devez créer le secret MongoDB dans le namespace. (cf déploiement MongoDB https://github.com/koden-process/unikalo-mongodb-k8s).
 
 ## ArgoCD
-Pour déployer ces charts en utilisant ArgoCD :
 
+Commencez par modifier le fichier `app.yaml` pour y inclure les valeurs spécifiques à votre déploiement.
+
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: unikalo-meow
+  namespace: argocd
+spec:
+  project: koden-clients
+  source:
+    repoURL: "https://github.com/koden-process/unikalo-meow-k8s.git"
+    targetRevision: main
+    path: charts
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: koden-clients
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+
+```
+
+Pour déployer : 
 ```sh
 kubectl apply -f app.yaml -n argocd
 ```
-
-## Helm
-Vous pouvez également déployer ce chart Helm de manière classique.
 
 ## Docker
 Les versions Docker sont disponibles sur le repo https://hub.docker.com/r/killiankopp/meow/tags.
