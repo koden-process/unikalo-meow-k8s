@@ -1,6 +1,6 @@
 app:
   name: unikalo-meow
-  image: killiankopp/meow:1.2
+  image: killiankopp/meow:1.5
   replicas: 1
   port: 3000
   url: meow.unikalo.koden.bzh
