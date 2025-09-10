@@ -41,3 +41,7 @@ spec:
               value: "https://storage.googleapis.com/koden-public/unikalo/logo-vertical.png"
             - name: VITE_CUSTOM_LOGO_ALT
               value: "Unikalo"
+            - name: VITE_CUSTOM_NAVIGATION_COLOR
+              value: "#1D1D1B"
+            - name: VITE_CUSTOM_THEME_COLOR
+              value: "#E3211F"
