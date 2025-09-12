@@ -36,12 +36,12 @@ spec:
             - name: NODE_ENV
               value: "production"
             - name: VITE_CUSTOM_FAVICON_URL
-              value: "https://storage.googleapis.com/koden-public/unikalo/favicon.svg"
+              value: {{ .Values.app.theme_favicon_url }}
             - name: VITE_CUSTOM_LOGO_URL
-              value: "https://storage.googleapis.com/koden-public/unikalo/logo-vertical.png"
+              value: {{ .Values.app.theme_logo_url }}
             - name: VITE_CUSTOM_LOGO_ALT
-              value: "Unikalo"
+              value: {{ .Values.app.theme_logo_alt_text }}
             - name: VITE_CUSTOM_NAVIGATION_COLOR
-              value: "#1D1D1B"
+              value: {{ .Values.app.theme_color_navbar }}
             - name: VITE_CUSTOM_THEME_COLOR
-              value: "#E3211F"
+              value: {{ .Values.app.theme_color_statusbar }}
