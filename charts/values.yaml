@@ -9,5 +9,5 @@ app:
   theme_favicon_url: https://storage.googleapis.com/koden-public/unikalo/favicon.svg
   theme_logo_url: https://storage.googleapis.com/koden-public/unikalo/logo-vertical.png
   theme_logo_alt_text: Unikalo
-  theme_color_navbar: #1D1D1B
-  theme_color_statusbar: #E3211F
+  theme_color_navbar: "#1D1D1B"
+  theme_color_statusbar: "#E3211F"
