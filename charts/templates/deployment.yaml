@@ -45,3 +45,5 @@ spec:
               value: {{ .Values.app.theme_color_navbar }}
             - name: VITE_CUSTOM_THEME_COLOR
               value: {{ .Values.app.theme_color_statusbar }}
+            - name: VITE_CUSTOM_APP_NAME
+              value: {{ .Values.app.theme_app_name }}
