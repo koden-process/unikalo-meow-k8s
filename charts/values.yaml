@@ -12,3 +12,4 @@ app:
   theme_color_navbar: "#1D1D1B"
   theme_color_statusbar: "#E3211F"
   theme_app_name: "Preskription"
+  pdf_template_url: "https://storage.googleapis.com/download/storage/v1/b/koden-public/o/unikalo%2Ffiche-opportunite-template.tpl?alt=media&generation=1782855703218527"
